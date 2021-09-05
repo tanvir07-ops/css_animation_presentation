@@ -1,0 +1,122 @@
+:root{
+   --page1-bg-color:teal;
+   --page2-bg-color:#704DA6;
+   --page3-bg-color:#78155F;
+   --page4-bg-color:#1D213A;
+   --animate-speed:2s;
+
+
+
+}
+body{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    /* overflow hidded deoar fole kono scrool bar show korbe nah */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.4;
+}
+
+#page-1{
+    background-color: var(--page1-bg-color);
+    color:white;
+   
+}
+
+#page-2{
+    background-color: var(--page2-bg-color);
+    color:white;
+}
+
+#page-3{
+
+    background-color: var(--page3-bg-color);
+    color:white;
+
+   
+
+
+}
+
+#page-4{
+    background-color: var(--page4-bg-color);
+    color:white;
+}
+
+.page{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    padding:0 4rem;
+   
+  
+}
+
+.page h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 1rem;
+  }
+
+.page p{
+    font-size:1.3rem;
+}
+
+ .btn{
+     display:inline-block;
+   text-decoration: none;
+   background: white;
+   color:#333;
+   padding: 1rem 2rem;
+   margin-top:1rem;
+   border:none;
+   font-size: 1.1rem;
+   transition: all 0.3s ease-in;
+}
+
+
+.btn:hover,
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+
+.btn-dark:hover {
+    background: #f4f4f4;
+    color: #333;
+  }
+
+
+  /* for animation */
+
+#page-1 h1{
+    transform : translateY(-1200px);
+    animation: heading var(--animate-speed) forwards ease-in;
+
+
+}
+
+#page-1 p{
+    transform : translateX(-1800px);
+    animation: paragraph var(--animate-speed) forwards ease-in-out 1s
+}
+
+@keyframes heading{
+     to{
+
+        transform:translateY(0);
+     }
+
+
+}
+
+@keyframes paragraph{
+    to{
+        transform:translateX(0);
+    }
+}
+

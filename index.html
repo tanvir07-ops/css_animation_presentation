@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/0abe0d6cc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Presentation Website</title>
+</head>
+<body>
+
+    <!-- page-1(intro) -->
+    <section id = "page-1" class = "page">
+        <h1>Welcome to the presentation website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus unde quis deleniti nobis odio voluptas eius cum accusantium officiis facere magni inventore a eveniet distinctio voluptatum itaque animi earum dolor maiores, tempore nisi. Doloribus, necessitatibus adipisci! Ut, accusantium ipsam.</p>
+
+
+        <div>
+            <a href="#page-2" class="btn">
+              Next Page <i class = "fas fa-arrow-circle-down"></i>
+    
+            </a>
+    
+    
+        </div>
+
+
+
+    </section>
+
+
+    <!-- page-2 -->
+
+    <section id = "page-2" class = "page">
+        <h1>Page 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus unde quis deleniti nobis odio voluptas eius cum accusantium officiis facere magni inventore a eveniet distinctio voluptatum itaque animi earum dolor maiores, tempore nisi. Doloribus, necessitatibus adipisci! Ut, accusantium ipsam.</p>
+
+
+        <div>
+            <a href="#page-1" class="btn btn-dark">
+              Prev Page <i class = "fas fa-arrow-circle-up"></i>
+    
+            </a>
+
+            <a href="#page-3" class="btn">
+                Next Page <i class = "fas fa-arrow-circle-down"></i>
+      
+            </a>
+      
+    
+    
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- page-3 -->
+
+    <section id = "page-3" class = "page">
+        <h1>Page 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus unde quis deleniti nobis odio voluptas eius cum accusantium officiis facere magni inventore a eveniet distinctio voluptatum itaque animi earum dolor maiores, tempore nisi. Doloribus, necessitatibus adipisci! Ut, accusantium ipsam.</p>
+
+
+        <div>
+            <a href="#page-2" class="btn btn-dark">
+              Prev Page <i class = "fas fa-arrow-circle-up"></i>
+    
+            </a>
+
+            <a href="#page-4" class="btn">
+                Next Page <i class = "fas fa-arrow-circle-down"></i>
+      
+            </a>
+      
+    
+    
+        </div>
+
+
+
+    </section>
+
+
+    <!-- page-4 -->
+
+
+    <section id = "page-4" class = "page">
+        <h1>Page 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero doloribus unde quis deleniti nobis odio voluptas eius cum accusantium officiis facere magni inventore a eveniet distinctio voluptatum itaque animi earum dolor maiores, tempore nisi. Doloribus, necessitatibus adipisci! Ut, accusantium ipsam.</p>
+
+
+        <div>
+            <a href="#page-3" class="btn">
+              Prev Page <i class = "fas fa-arrow-circle-up"></i>
+    
+            </a>
+
+          
+      
+    
+    
+        </div>
+
+
+
+    </section>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+    // Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  </script>
+    
+
+ 
+
+
+
+    
+</body>
+</html>
